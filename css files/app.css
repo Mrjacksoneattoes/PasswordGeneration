@@ -17,7 +17,7 @@ body{
     background-color: white;
     color: black;
     width: 23%;
-    height: 75%;
+    height: 80%;
     padding: 1%;
     border: 0;
     border-radius: 10px;
@@ -275,7 +275,7 @@ body{
     display: flex;
    }
    .btn{
-    margin-top:5%;
+    margin-top:10%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
