@@ -15,7 +15,7 @@ let toggleUpper = document.getElementById("upperCase");
 let toggleLower = document.getElementById("lowerCase");
 let toggleNumber = document.getElementById("number");
 let toggleSymbols = document.getElementById("symbol");
-
+let imageGeneration = document.getElementById("generate")
 
 
 
@@ -60,6 +60,25 @@ function lancerScript(){
     affichageCharacters()
     bouton.addEventListener("click", (e)=>{
         password = []
+        while(password.length < inputChoose.value){
+            if(toggleUpper.checked){
+                affichageUpper()
+            }
+            if(toggleLower.checked){
+                affiChageLower()
+            } 
+            if(toggleNumber.checked){
+                affichageNumber()
+            }
+            if(toggleSymbols.checked){
+                affichageSymbols()
+            }
+        }
+        affichage.textContent = password.join('')
+        console.log(password.join(''))
+    })
+    imageGeneration.addEventListener("click", (e)=>{
+        password=[];
         while(password.length < inputChoose.value){
             if(toggleUpper.checked){
                 affichageUpper()
