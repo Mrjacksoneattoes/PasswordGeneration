@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Generate password</title>
     <link rel="stylesheet" href="/css files/app.css">
 </head>
 <body>
@@ -18,6 +18,61 @@
     <main>
         <div class="container">
             <p id="title">Generate password</p>
+            <p id="area">Gnerated password</p>
+            <div class="area">
+                <p id="affichage">password</p>
+                <img src="/assets/energy.png" height="25" id="generate" alt="">
+            </div>
+            <p id="chara">character length: <span id="characterLength">15</span></p>
+            <div class="miniInput">
+                <p id="min">0</p><input type="range" id="choose" min="0" max="30" value="15"><p id="max">30</p>
+            </div>
+            <p id="settings">
+                settings
+            </p>
+            <div class="settings">
+                <div class="uppercase">
+                    <p>include uppercase letters</p>
+                    <div class="cl-toggle-switch">
+                        <label class="cl-switch">
+                          <input type="checkbox" id="upperCase">
+                          <span></span>
+                        </label>
+                      </div>
+                </div>
+                <div class="lowerCase">
+                    <p>include lowercase letters</p>
+                    <div class="cl-toggle-switch">
+                        <label class="cl-switch">
+                          <input type="checkbox" id="lowerCase">
+                          <span></span>
+                        </label>
+                      </div>
+
+                </div>
+                <div class="numbers">
+                    <p>include numbers</p>
+                    <div class="cl-toggle-switch">
+                        <label class="cl-switch">
+                          <input type="checkbox" id="number">
+                          <span></span>
+                        </label>
+                      </div>
+                </div>
+                <div class="symbols">
+                    <p>include symbols</p>
+                    <div class="cl-toggle-switch">
+                        <label class="cl-switch">
+                          <input type="checkbox" id="symbol">
+                          <span></span>
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <button class="btn">
+                Generate password
+            </button>
+
         </div>
     </main>
 
